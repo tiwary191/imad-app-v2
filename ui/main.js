@@ -1,4 +1,3 @@
-console.log('Loaded!');
 function Login() {
    var loggedInUser=document.getElementById("user_login").value;
    //document.getElementById("user_Name").innerHTML=loggedInUser;
