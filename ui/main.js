@@ -1,7 +1,7 @@
 function Login() {
    var loggedInUser=document.getElementById("user_login").value;
    //document.getElementById("user_Name").innerHTML=loggedInUser;
-   src="/ui/UserProfile.html?Id=" + loggedInUser ;
+   window.location="/ui/UserProfile.html?Id=" + loggedInUser ;
    
    //alert(loggedInUser);
 }
@@ -39,5 +39,5 @@ function getQueryStringValue (key) {
 }  
 
 function GetMedicalReport(){
-	src="https://thingspeak.com/apps/plugins/122389";
+	window.location="https://thingspeak.com/apps/plugins/122389";
 }
