@@ -30,7 +30,13 @@ var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
     
     
-var names=['name1','name2','name3'];
+     var request=new XMLHttpRequest();
+    request.onreadystatechange = function(){
+    // process the server response
+    if (request.readyState === XMLHttpRequest.DONE) {
+        if(request.status==200){
+          var names=request.responseText;
+          names=JSON.parse(names);
 var list='';
 for(var i=0;i<names.length;i++){
     
@@ -39,6 +45,19 @@ for(var i=0;i<names.length;i++){
 }
 var ul=document.getElementById('namelist');
 ul.innerHTML=list;
+            
+        }
+    // everything is good, the response is received
+} else {
+    // still not ready
+}
+};
+    
+  request.open('GET','http://tiwary191.imad.hasura-app.io/submit-name?name='+name,true);
+  request.send(null);
+    
+    
+
 
     
 
