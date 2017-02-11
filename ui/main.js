@@ -22,6 +22,15 @@ button.onclick= function(){
   request.open('GET','http://tiwary191.imad.hasura-app.io/counter',true);
   request.send(null);
   
- 
-  
+    
 };
+var nameInput =document.getElementById("name");
+var name= nameInput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick=function(){
+    
+    
+    
+    
+}
+
