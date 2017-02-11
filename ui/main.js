@@ -1,2 +1,2 @@
 //console.log('Loaded!');
-var= document.getElementById("counter");
+var button = document.getElementById('counter');
