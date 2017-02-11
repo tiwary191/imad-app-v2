@@ -52,7 +52,9 @@ ul.innerHTML=list;
     // still not ready
 }
 };
-    
+    var nameInput =document.getElementById("name");
+    var name= nameInput.value;
+        
   request.open('GET','http://tiwary191.imad.hasura-app.io/submit-name?name='+name,true);
   request.send(null);
     
