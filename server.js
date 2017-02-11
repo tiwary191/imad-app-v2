@@ -13,7 +13,7 @@ app.get('/testing', function (req, res) {
 });
 var counter=0;
 app.get('/counter',function(req,res){
-    counter=conter+1;
+    counter=counter+1;
     res.send(counter.toString());
     
 });
