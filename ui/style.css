@@ -13,6 +13,10 @@ body {
 .left {
     text-align: left;
 }
+.text{
+    color:blue;
+    
+}
 .container {
     text-align: center;
 }
