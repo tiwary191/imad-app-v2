@@ -1,1 +1,2 @@
-console.log('Loaded!');
+//console.log('Loaded!');
+var= document.getElementById("counter");
